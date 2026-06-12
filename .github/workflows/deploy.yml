@@ -22,8 +22,6 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Install Tectonic (latest release from GitHub)
         run: |
