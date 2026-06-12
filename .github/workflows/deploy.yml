@@ -1,0 +1,96 @@
+name: Build and deploy CVs
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Install Tectonic (latest release from GitHub)
+        run: |
+          URL=$(curl -fsSL https://api.github.com/repos/tectonic-typesetting/tectonic/releases/latest \
+            | grep browser_download_url \
+            | grep 'x86_64-unknown-linux-gnu.tar.gz' \
+            | cut -d '"' -f 4 | head -1)
+          echo "Downloading $URL"
+          curl -fsSL -o tectonic.tar.gz "$URL"
+          tar xzf tectonic.tar.gz
+          sudo mv tectonic /usr/local/bin/
+          tectonic --version
+
+      - name: Compile CVs
+        run: |
+          set -e
+          for f in Lodefalk_CV_Short Lodefalk_CV Lodefalk_CV_Comprehensive; do
+            echo "::group::Compiling $f"
+            tectonic "$f.tex"
+            echo "::endgroup::"
+          done
+          mkdir -p public
+          cp Lodefalk_CV_Short.pdf Lodefalk_CV.pdf Lodefalk_CV_Comprehensive.pdf public/
+
+      - name: Build landing page
+        run: |
+          cat > public/index.html <<'HTML'
+          <!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Magnus Lodefalk &mdash; CV</title>
+            <style>
+              body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 40rem; margin: 4rem auto; padding: 0 1rem; color: #1a1a1a; line-height: 1.5; }
+              h1 { font-variant: small-caps; letter-spacing: 0.02em; }
+              ul { line-height: 2.2; list-style: none; padding-left: 0; }
+              a { color: #003366; text-decoration: none; }
+              a:hover { text-decoration: underline; }
+              .note { color: #777; font-size: 0.85rem; margin-top: 2.5rem; }
+            </style>
+          </head>
+          <body>
+            <h1>Magnus Lodefalk</h1>
+            <p>Associate Professor (Docent) of Economics, Örebro University School of Business and Ratio Institute, Sweden.</p>
+            <ul>
+              <li>&rarr; <a href="Lodefalk_CV_Short.pdf">Short CV</a> (3 pp)</li>
+              <li>&rarr; <a href="Lodefalk_CV.pdf">Standard CV</a> (7 pp)</li>
+              <li>&rarr; <a href="Lodefalk_CV_Comprehensive.pdf">Comprehensive CV</a> (full record)</li>
+            </ul>
+            <p class="note">Compiled automatically from LaTeX source on each update.</p>
+          </body>
+          </html>
+          HTML
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

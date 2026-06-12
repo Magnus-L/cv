@@ -1,0 +1,19 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+*.bbl
+*.blg
+
+# Compiled PDFs are build outputs (the Action recompiles them)
+*.pdf
+
+# Internal working notes — keep local, not in the public repo
+CV_UPDATE_INSTRUCTIONS.md
+
+# macOS
+.DS_Store

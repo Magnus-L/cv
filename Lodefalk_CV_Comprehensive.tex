@@ -1,0 +1,908 @@
+%-------------------------------------------------------------------------
+% COMPREHENSIVE Academic CV - Magnus Lodefalk
+% LaTeX Template based on conventions from top economics researchers
+% (David Autor, Daron Acemoglu, David Deming)
+%
+% This is the FULL version containing all appearances, publications,
+% presentations, and media coverage.
+%-------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper]{article}
+
+% ---- Packages ----
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{xcolor}
+\usepackage{datetime2}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs}
+
+% ---- Colors ----
+\definecolor{linkblue}{RGB}{0,51,102}
+\definecolor{rankgray}{RGB}{100,100,100}
+
+% ---- Hyperref setup ----
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkblue,
+  urlcolor=linkblue,
+  pdftitle={CV - Magnus Lodefalk},
+  pdfauthor={Magnus Lodefalk}
+}
+
+% ---- Section formatting ----
+\titleformat{\section}
+  {\Large\bfseries\scshape}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titleformat{\subsection}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}
+
+\titlespacing*{\section}{0pt}{16pt}{8pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+
+% ---- List formatting ----
+\setlist[itemize]{leftmargin=*, nosep, topsep=2pt}
+\setlist[enumerate]{leftmargin=*, nosep, topsep=2pt}
+
+% ---- Header/Footer ----
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\footnotesize Magnus Lodefalk -- Curriculum Vitae}
+\fancyfoot[C]{\thepage\ of \pageref{LastPage}}
+\fancyfoot[R]{\footnotesize Updated: \today}
+
+% ---- Custom commands ----
+\newcommand{\name}[1]{\textbf{#1}}
+\newcommand{\cventry}[1]{\item #1}
+\newcommand{\publication}[1]{\item #1}
+% Journal ranking notation (subtle, in gray)
+\newcommand{\absrank}[1]{\textcolor{rankgray}{\scriptsize [ABS#1]}}
+\newcommand{\ftfifty}{\textcolor{rankgray}{\scriptsize [FT50]}}
+
+%-------------------------------------------------------------------------
+\begin{document}
+
+% ---- Header ----
+\begin{center}
+  {\LARGE\bfseries\scshape Magnus Lodefalk}\\[6pt]
+  \textit{Associate Professor (Docent) of Economics}\\[4pt]
+  \href{https://www.oru.se/english/employee/magnus_lodefalk}{Örebro University School of Business} $\cdot$ \href{https://www.ratio.se/medarbetare/magnus-lodefalk/}{Ratio Institute}, Sweden\\[4pt]
+  \href{mailto:magnus.lodefalk@oru.se}{magnus.lodefalk@oru.se} $\cdot$
+  \href{https://sites.google.com/view/magnuslodefalk}{Personal Website}\\[4pt]
+  \href{https://www.ai-econlab.com}{AI-Econ Lab} $\cdot$
+  \href{https://www.aiscaf.se}{AISCAF Cluster}\\[4pt]
+  \href{https://scholar.google.com/citations?user=z0WQ2JcAAAAJ}{Google Scholar} $\cdot$
+  \href{https://ideas.repec.org/f/plo250.html}{IDEAS/RePEc}
+\end{center}
+
+\vspace{6pt}
+
+%-------------------------------------------------------------------------
+\section{Current Positions}
+%-------------------------------------------------------------------------
+
+\begin{itemize}
+  \cventry{\textbf{Associate Professor (Docent)}, Örebro University School of Business, Sweden, May 2017--present}
+  \cventry{\textbf{Researcher}, Ratio Institute, Stockholm, Sweden, Sep 2016--present}
+  \cventry{\textbf{Research Fellow}, Global Labor Organisation (GLO), Nov 2018--present}
+\cventry{\textbf{Co-Leader}, AI-Econ Lab (with H. Kyvik Nordås), 2019--present}
+  
+\cventry{\textbf{Cluster Team Leadership Team member} (one of three), AISCAF (WASP-HS research cluster), Sep 2025--present \textit{(role entails node leadership of one of three nodes)}}
+\cventry{\textbf{Research Leader} (with D. Johansson), Entrepreneurship, Family Firms, Globalisation and Institutions (EFGI) Research Group, Örebro University, Fall 2017--present}
+  \cventry{\textbf{Founder}, Sörby Economics AB, Örebro, Sweden, 2010--present\\
+  \textit{Consultancy in economic research and development}}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{Education}
+%-------------------------------------------------------------------------
+
+\begin{itemize}
+  \cventry{\textbf{PhD in Economics}, Örebro University, Sweden, 2010--2013\\
+  \textit{Defended:} 14 June 2013\\
+  \textit{Thesis:} ``Tackling Barriers to Firm Trade: Liberalisation, Migration, and Servicification''\\
+  \textit{Opponent:} Prof. Holger Görg, Christian-Albrechts University, Kiel, Germany\\
+  \textit{Examiners:} Prof. Karolina Ekholm (Stockholm University/Central Bank of Sweden); Ass. Prof. Fredrik Heyman (Research Institute of Industrial Economics, IFN); Prof. Sune Karlsson (Örebro University)\\
+  \textit{Final Seminar Discussant:} Prof. Martin Andersson, Lund University\\
+  \textit{Supervisors:} Prof. Fredrik Sjöholm (Lund University/IFN); Prof. Pär Hansson (Örebro University/Growth Analysis)}
+
+  \cventry{\textbf{MSc Studies in Economics} (Exchange Student), University of Western Ontario, Canada, 1999--2000}
+
+  \cventry{\textbf{BA in Political Science}, University of Växjö, Sweden, 2004}
+
+  \cventry{\textbf{BSc in Economics}, Stockholm University, Sweden, 2000}
+
+  \cventry{\textbf{Language Studies} (German and Spanish), Goethe Institute, Germany \& Malaca Institute, Spain, 1998--1999}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{Research Interests}
+%-------------------------------------------------------------------------
+
+Artificial intelligence and labor markets $\cdot$ International trade $\cdot$ Migration and firm internationalization $\cdot$ Export credit guarantees $\cdot$ Servicification of manufacturing $\cdot$ Entrepreneurship and firm dynamics $\cdot$ Family firms
+
+%-------------------------------------------------------------------------
+\section{International Peer-Reviewed Publications}
+%-------------------------------------------------------------------------
+
+\textit{Note: ABS = Academic Journal Guide ranking (1--4*).}
+
+\vspace{6pt}
+
+\begin{enumerate}[label={[\arabic*]}]
+
+\publication{\name{Lodefalk, M.}, Tang, A. and M. Yu (2025), \href{https://doi.org/10.1080/13504851.2025.2549506}{``Stayin' alive: Export Credit Guarantees and Export Survival,''} \textit{Applied Economics Letters}, early online. \absrank{1}}
+
+\publication{Engberg, E., Koch, M., \name{Lodefalk, M.}, and S. Schroeder (2025), \href{https://doi.org/10.1016/j.respol.2025.105285}{``Artificial Intelligence, Tasks, Skills and Wages: Worker-Level Evidence from Germany,''} \textit{Research Policy}, vol. 54(8), art. 105285. \absrank{4*}}
+
+\publication{Engberg, E., Hellsten, M., Javed, F., \name{Lodefalk, M.}, Sabolová, R., Schroeder, S. and A. Tang (2025), \href{https://doi.org/10.1080/13504851.2025.2497431}{``Artificial Intelligence, Hiring and Employment: Job Postings Evidence from Sweden,''} \textit{Applied Economics Letters}, early online. \absrank{1}}
+
+\publication{Koch, M. and \name{M. Lodefalk} (2025), \href{https://doi.org/10.1007/s44206-025-00160-3}{``Artificial Intelligence and Worker Stress: Evidence from Germany,''} \textit{Digital Society}, vol. 4(1).}
+
+\publication{Hatzigeorgiou, A., Karpaty, P., Kneller, R. and \name{M. Lodefalk} (2024), \href{https://doi.org/10.1007/s10290-023-00519-z}{``Immigrant Employment and the Contract Enforcement Costs of Offshoring,''} \textit{Review of World Economics}, vol. 160, no. 3, pp. 953--981.}
+
+\publication{Baccini, L., \name{Lodefalk, M.} and R. Sabolová (2024), \href{https://doi.org/10.1017/s0020818323000255}{``Economic Determinants of Attitudes toward Migration: Firm-Level Evidence from Europe,''} \textit{International Organization}, vol. 78(1), pp. 67--102. \absrank{4}}
+
+\publication{Agarwal, N., Chan, J.M.L., \name{Lodefalk, M.}, Tang, A., Tano, S. and Z. Wang (2023), \href{https://doi.org/10.1016/j.jinteco.2023.103831}{``Mitigating Information Frictions in Trade: Evidence from Export Credit Guarantees,''} \textit{Journal of International Economics}, vol. 145, art. 103831. \absrank{4}}
+
+\publication{\name{Lodefalk, M.} and F. Andersson (2023), \href{https://doi.org/10.1371/journal.pone.0283690}{``Business Angels and Firm Performance: First Evidence from Population Data,''} \textit{PLoS ONE}, vol. 18, no. 3.}
+
+\publication{\name{Lodefalk, M.}, Sjöholm, F. and A. Tang (2022), \href{https://doi.org/10.1111/twec.13240}{``International Trade and Labour Market Integration of Immigrants,''} \textit{The World Economy}, vol. 45, no. 6, pp. 1650--1689.}
+
+\publication{Hatzigeorgiou, A. and \name{M. Lodefalk} (2021), \href{https://doi.org/10.1080/09638199.2021.1878257}{``A Literature Review of the Nexus between Migration and Internationalization,''} \textit{Journal of International Trade \& Economic Development}, vol. 30, no. 3, pp. 319--340. \absrank{1}}
+
+\publication{Hatzigeorgiou, A. and \name{M. Lodefalk} (2019), \href{https://doi.org/10.1111/twec.12838}{``Migration and Servicification: Do Immigrant Employees Spur Firm Exports of Services?,''} \textit{The World Economy}, vol. 42, no. 11, pp. 3368--3401. \absrank{2}}
+
+\publication{\name{Lodefalk, M.} and A. Tang (2018), \href{https://doi.org/10.1080/13504851.2017.1422594}{``The impact of hiring top workers on productivity: what is the role of absorptive capacity?,''} \textit{Applied Economics Letters}, vol. 25, no. 20, pp. 1402--1406. \absrank{1}}
+
+\publication{Andersson, F., Johansson, D., Karlsson, J., \name{Lodefalk, M.} and A. Poldahl (2018), \href{https://doi.org/10.1504/ijesb.2018.095903}{``Female Top Management in Family Firms and Non-family Firms: Evidence from Total Population Data,''} \textit{Int. J. of Entrepreneurship and Small Business}, vol. 35, no. 3, p. 303. \absrank{2}}
+
+\publication{Andersson, F., Johansson, D., Karlsson, J., \name{Lodefalk, M.}, and A. Poldahl (2018), \href{https://doi.org/10.1007/s11187-017-9947-6}{``The Characteristics of Family Firms: Exploiting Information on Ownership, Kinship and Governance Using Total Population Data,''} \textit{Small Business Economics}, vol. 51, no. 3, pp. 539--556. \absrank{3}}
+
+\publication{Gidehag, A. and \name{M. Lodefalk} (2017), ``Recruiting for Small Business Growth: Micro-level Evidence,'' \textit{International Review of Entrepreneurship}, vol. 15, no. 2. \absrank{2}}
+
+\publication{\name{Lodefalk, M.} (2017), \href{https://doi.org/10.1017/s147474561600029x}{``Servicification of Firms and Trade Policy Implications,''} \textit{World Trade Review}, vol. 16, no. 1, pp. 59--83.}
+
+\publication{\name{Lodefalk, M.} (2016), \href{https://doi.org/10.1007/s10290-016-0254-0}{``Temporary Expats for Exports: Micro-Level Evidence,''} \textit{Review of World Economics/Weltwirtschaftliches Archiv}, vol. 152, no. 4, pp. 733--772. \absrank{2}}
+
+\publication{Hatzigeorgiou, A. and \name{M. Lodefalk} (2016), \href{https://doi.org/10.1007/s10842-015-0215-7}{``Migrants' Influence on Firm-level Exports,''} \textit{Journal of Industry, Competition and Trade}, vol. 16, no. 4, pp. 477--497. \absrank{2}}
+
+\publication{Hatzigeorgiou, A. and \name{M. Lodefalk} (2016), ``The Brexit Trade Disruption Revisited,'' \textit{The Estey Journal of International Law and Trade Policy}, vol. 17, no. 1.}
+
+\publication{Hatzigeorgiou, A. and \name{M. Lodefalk} (2015), \href{https://doi.org/10.1111/twec.12236}{``Trade, Migration and Integration -- Evidence and Policy Implications,''} \textit{The World Economy}, vol. 38, no. 12, pp. 2013--2048.}
+
+\publication{\name{Lodefalk, M.} (2014), \href{https://doi.org/10.1007/s10290-013-0171-4}{``The Role of Services for Manufacturing Firm Exports,''} \textit{Review of World Economics/Weltwirtschaftliches Archiv}, vol. 150, no. 1, pp. 59--82. \absrank{2}}
+
+\publication{\name{Lodefalk, M.} (2013), \href{https://doi.org/10.1504/ijebr.2013.054855}{``Servicification of manufacturing -- evidence from Sweden,''} \textit{International Journal of Economics and Business Research}, vol. 6, no. 1, p. 87.}
+
+\publication{Kinnman, S. and \name{M. Lodefalk} (2009), \href{https://doi.org/10.1080/1406099x.2009.10840453}{``A Global Baltic -- Potential Gains from Trade Liberalisation in the Baltic Sea States,''} \textit{Baltic Journal of Economics}, vol. 9, no. 1, pp. 55--79.}
+
+\publication{Kinnman, S. and \name{M. Lodefalk} (2007), \href{https://doi.org/10.1111/j.1467-9701.2007.01045.x}{``What is at Stake in the Doha Round?,''} \textit{The World Economy}, vol. 30, no. 8, pp. 1305--1325. \absrank{2}}
+
+\publication{Storey, M. and \name{M. Lodefalk} (2005), \href{https://doi.org/10.54648/trad2005005}{``Climate Measures and WTO Rules on Subsidies,''} \textit{Journal of World Trade}, vol. 39, no. 1, pp. 23--44. \absrank{2}}
+
+\publication{\name{Lodefalk, M.} and J. Whalley (2002), \href{https://doi.org/10.1111/1467-9701.00452}{``Reviewing Proposals for a World Environmental Organisation,''} \textit{The World Economy}, vol. 25, no. 5, pp. 601--617. \absrank{2}}
+
+\end{enumerate}
+
+%-------------------------------------------------------------------------
+\section{Books}
+%-------------------------------------------------------------------------
+
+\begin{enumerate}[label={[\arabic*]}]
+
+\publication{\name{Lodefalk, M.} (2024), \textit{Artificiell intelligens och jobben} (Artificial Intelligence and Work). Stockholm, Sweden: Ratio. (Popular science book, published 12 March 2024)}
+
+\publication{\name{Lodefalk, M.} et al. (2006), \textit{Capacity Building on WTO and Environmental Protection}, Swedish Environmental Protection Agency.}
+
+\end{enumerate}
+
+%-------------------------------------------------------------------------
+\section{Policy Reports and Government Publications}
+%-------------------------------------------------------------------------
+
+\begin{enumerate}[label={[\arabic*]}]
+
+\publication{(2025) ``Algoritmer för allmän nytta: en ESO-rapport om AI, produktivitet och arbetskraftsbehovet i offentlig sektor'' (Algorithms for Public Use: an ESO-Report on AI, Productivity, and Labour Demand in the Public Sector), Expert Group on Public Economics, Ministry of Finance, Report 2025:2. (with Engberg and Tang)}
+
+\publication{(2016) \textit{Kunskapsöverföring för tillväxt -- Sambanden mellan produktivitet och rekrytering av nyckelkompetens hos små och medelstora företag}, Growth Analysis, Sweden, PM 2016:12. (with A. Gidehag)}
+
+\publication{(2015) \textit{Migration och företagens internationalisering -- en kunskapsöversikt}, Delmi, Kunskapsöversikt 2015:4. (with A. Hatzigeorgiou)}
+
+\publication{(2015) \textit{How Cross-Border Movement of Persons Facilitates Trade -- The Case of Swedish Exports}, National Board of Trade, Sweden, Report 2015:2. (with A. Graneli)}
+
+\publication{(2014) \textit{Utlandsfödda och företagens internationalisering -- ett lyft för tjänsteexporten?}, Swedish Entrepreneurship Forum, Globalisation Report no. 7. (with A. Hatzigeorgiou)}
+
+\publication{(2011) \textit{Mångfald och internationalisering -- Utlandsfödda personer bidrar till internationalisering av svenska företag}, Swedish Agency for Economic and Regional Growth, Report. (with A. Hatzigeorgiou)}
+
+\publication{(2010) \textit{Servicification of Swedish manufacturing}, National Board of Trade, Sweden, Report 2010:1.}
+
+\publication{(2007) \textit{Potential Gains from Trade Liberalisation in the Baltic Sea Region}, National Board of Trade, Report. (with S. Kinnman)}
+
+\publication{(2006) \textit{Economic Implications of the Doha Round}, National Board of Trade, Sweden, Report. (with S. Kinnman)}
+
+\publication{(2005) \textit{Climate and Trade Rules -- harmony or conflict}, National Board of Trade, Sweden, Report.}
+
+\end{enumerate}
+
+%-------------------------------------------------------------------------
+\section{Other Published Work}
+%-------------------------------------------------------------------------
+
+\subsection{Journal Articles and Editorials (Swedish)}
+
+\begin{enumerate}[label={[\arabic*]}]
+
+\publication{(2025) ``AI i offentlig sektor'' (AI in the Public Sector), \textit{Ekonomisk Debatt}, vol. 53, no. 4. (with Engberg, Rydén and Tang)}
+
+\publication{(2020) ``Stå på giganters axlar,'' \textit{Ekonomisk Debatt}, Editorial, vol. 48, no. 5.}
+
+\publication{(2019) ``Statliga garantier i utrikeshandeln -- mönster, effekter och reflektioner,'' \textit{Ekonomisk Debatt}, vol. 47, no. 8. (with Tang and Tano)}
+
+\publication{(2018) ``Den trumpska hästen,'' \textit{Ekonomisk Debatt}, Editorial, vol. 46, no. 5.}
+
+\publication{(2018) ``Svenska affärsänglar -- hur lyckas de med sina investeringar?,'' \textit{Ekonomisk Debatt}, vol. 46, no. 3. (with F.W. Andersson)}
+
+\publication{(2017) ``Behovet av en ny handelspolitik,'' \textit{Ekonomisk Debatt}, Editorial, vol. 45, no. 6.}
+
+\publication{(2016) ``Brexflektioner -- vilka blir de ekonomiska konsekvenserna av att Storbritannien lämnar EU?,'' \textit{Ekonomisk Debatt}, vol. 44, no. 6. (with A. Hatzigeorgiou)}
+
+\publication{(2015) ``Migration kan främja internationalisering,'' \textit{Ekonomiska Samfundets Tidskrift}, vol. 69, no. 1. (with A. Hatzigeorgiou)}
+
+\publication{(2015) ``Utlandsfödda kan främja företagens export av tjänster,'' \textit{Ekonomisk Debatt}, vol. 43, no. 6. (with A. Hatzigeorgiou)}
+
+\publication{(2013) ``Hur undervisar vi i nationalekonomi?,'' \textit{Ekonomisk Debatt}, Forum, vol. 41, no. 1.}
+
+\publication{(2012) ``Utlandsfödda främjar företagens utrikeshandel,'' \textit{Ekonomisk Debatt}, vol. 40, no. 5. (with A. Hatzigeorgiou)}
+
+\end{enumerate}
+
+\subsection{Book Chapters}
+
+\begin{enumerate}[label={[\arabic*]}]
+
+\publication{(2019) ``Utrikeshandel, löner och rörlighet'' in Stern, L. (ed.) \textit{En dynamisk arbetsmarknad}, Dialogos. (with Kyvik-Nordås and Tang)}
+
+\end{enumerate}
+
+\subsection{Policy Briefs and VoxEU Columns}
+
+\begin{enumerate}[label={[\arabic*]}]
+
+\publication{(2021) ``The EU Digital Market Regulations: Rule-Maker or Deal-Breaker?,'' TIISA Policy Brief, December 2021. (with Kyvik-Nordås and Wernberg)}
+
+\publication{(2021) ``Migration can Play a Role in the Post-Pandemic Reboot of Global Trade,'' CEPR, VoxEU.org, 24 April. (with Hatzigeorgiou and Alm)}
+
+\publication{(2020) ``Globalization on hold or in reverse?,'' TIISA Policy Brief 2020-1.}
+
+\publication{(2020) ``Globalisering, var god dröj,'' \textit{Kvartal}, 9 April.}
+
+\publication{(2019) ``The effects of export credit guarantees on firm performance,'' CEPR, VoxEU.org, 11 December. (with Agarwal, Stenberg, Tang, Tano and Wang)}
+
+\publication{(2015) ``Cross-border movement of persons stimulate trade,'' CEPR, VoxEU.org, 14 October. (with E. Anér and A. Graneli)}
+
+\publication{(2015) ``Atithi Devo Bhava?,'' Observer Research Foundation, Issue Brief no. 91. (with N. Agarwal)}
+
+\publication{(2015) ``Getting more out of India's `Tourist Visa on Arrival' scheme,'' International Growth Centre, Ideas for India, 10 April. (with N. Agarwal)}
+
+\publication{(2015) ``Tear down the trade policy silos! Or, how the servicification of manufacturing makes divides in trade policy-making irrelevant,'' CEPR, VoxEU.org, 16 January.}
+
+\end{enumerate}
+
+%-------------------------------------------------------------------------
+\section{Recent Selected Working Papers and Manuscripts}
+%-------------------------------------------------------------------------
+
+\begin{enumerate}[label={[\arabic*]}]
+
+\publication{Pulito, G., Pytlikova, M., Schroeder, S. and \name{Lodefalk, M.} (2026), ``Who Adopts AI? Evidence on Firms, Technologies, and Workers,'' \href{https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2026/wp-3-2026.pdf}{Örebro University Working Paper 2026:3}, \href{https://www.iza.org/publications/dp/18515}{IZA Discussion Paper 18515}, \href{https://www.rfberlin.com/wp-content/uploads/2026/03/26089.pdf}{RFBerlin Discussion Paper 089/26}, \href{https://www.cerge-ei.cz/pdf/wp/Wp818.pdf}{CERGE-EI Working Paper 818}.}
+
+\publication{\name{Lodefalk, M.}, Löthman, L., Koch, M. and E. Engberg (2026), ``Same Storm, Different Boats: Generative AI and the Age Gradient in Hiring,'' \href{https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2026/wp-2-2026.pdf}{Örebro University Working Paper 2026:2}, \href{https://cms.ratio.se/app/uploads/2026/03/lodefalk_march16_paper_v2-kombinerades.pdf}{Ratio Working Paper 388}.}
+
+\publication{Hellsten, M., Khanna, S., \name{Lodefalk, M.} and Y. Yakymovych (2025), ``The Effects of Artificial Intelligence on Jobs: Evidence from an AI Subsidy Program,'' \href{https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2025/wp-13-2025.pdf}{Örebro University Working Paper 2025:13}, \href{https://cms.ratio.se/app/uploads/2025/11/working-paper-386-1.pdf}{Ratio Working Paper 386}, \href{https://www.iza.org/publications/dp/18267}{IZA Discussion Paper 18267}, \href{https://ideas.repec.org/p/zbw/glodps/1692.html}{GLO Discussion Paper 1692}. \textit{Under review at Economic Journal.}}
+
+\publication{\name{Lodefalk, M.}, Engberg, E., Lidskog, R., Skargren, F. and A. Tang (2025), ``Artificial Intelligence for Public Use,'' \href{https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2025/wp-6-2025.pdf}{Örebro University Working Paper 2025:6}. \textit{Resubmitted to Digital Society.}}
+
+\publication{Kyvik Nordås, H., \name{Lodefalk, M.} and A. Tang (2025), ``Exports and Foreign Direct Investment: Theory and Evidence for Services Firms,'' Örebro University Working Paper / Ratio Working Paper. \textit{In revision.}}
+
+\publication{Engberg, E., Görg, H., Hellsten, M., Javed, F., Kyvik-Nordås, H., \name{Lodefalk, M.}, Längkvist, M., Monteiro, N., Pulito, G., Schroeder, S. and A. Tang (2024), ``AI Unboxed and Jobs: A Novel Measure and Firm-Level Evidence from Three Countries,'' \href{https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2023/wp-13-2023.pdf}{Örebro University Working Paper 2023:13}, \href{https://cms.ratio.se/app/uploads/2023/12/wp-370-ai-unboxed.pdf}{Ratio Working Paper 370}, \href{https://www.iza.org/publications/dp/16717}{IZA Discussion Paper 16717}, \href{https://www.rfberlin.com/wp-content/uploads/2024/08/AI-Unboxed-and-Jobs-A-Novel-Measure-and-Firm-Level-Evidence-from-Three-Countries.pdf}{RFBerlin/CReAM Discussion Paper 14/24}. \textit{Under review at Economic Journal.}}
+
+\publication{Kyvik Nordås, H., A. Tang and \name{Lodefalk, M.} (2017), ``Trading Firms and Trading Costs in Services: The Case of Sweden,'' \href{https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2017/wp-4-2017.pdf}{Örebro University Working Paper 2017:4}. \textit{In revision.}}
+
+\end{enumerate}
+
+%-------------------------------------------------------------------------
+\section{Previous Positions}
+%-------------------------------------------------------------------------
+
+\begin{itemize}
+  \cventry{\textbf{Co-Director}, Jean Monnet Trade and Investment in Services Associates (TIISA) Network, Fall 2018--2021\\
+  \textit{EU-funded transcontinental research and educational network}}
+
+  \cventry{\textbf{Research Fellow in Economics}, Örebro University, Sweden, Feb 2014--Dec 2017\\
+  \textit{Postdoctoral research position including comprehensive teaching and leadership training program}}
+
+  \cventry{\textbf{Senior Adviser and Trade Economist}, Department for Trade and Policy Developments, National Board of Trade (Kommerskollegium), Sweden, 2003--2014\\
+  \textit{(Senior Adviser since 2008; Trade Economist since 2006; paternity leave 2007; on leave Oct 2010--Aug 2013)}\\
+  \textit{Responsible for economic analysis of trade and trade policy; CGE modelling; Member of the EC-Commission Network for European Trade Economist, 2005--2013}}
+
+  \cventry{\textbf{Lecturer in Economics}, Örebro University, Sweden, Oct 2010--Feb 2014\\
+  \textit{Teaching graduate course on the international trading system}}
+
+  \cventry{\textbf{Senior Officer}, International Department, The Social Security Administration, Sweden, 2001--2003}
+
+  \cventry{\textbf{Officer}, International Department, The Social Security Administration, Sweden, 2001}
+
+  \cventry{\textbf{Graduate Research Assistant} for Prof. John Whalley, Department of Economics, University of Western Ontario, Canada, 2000\\
+  \textit{Provided input to research project on a World Environmental Organisation}}
+
+  \cventry{\textbf{Internship}, Swedish Cooperative Centre (development assistance NGO), Stockholm, Sweden, 2001}
+
+  \cventry{\textbf{Communicator}, Bite Telemarketing, 1996--1997}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{Research Visits}
+%-------------------------------------------------------------------------
+
+\begin{itemize}
+  \cventry{Northeastern University, Boston, USA, January 2026}
+  \cventry{The Research Centre for Firms and Industry Dynamics (FIND), Aarhus University, Denmark, April 2022, October 2022, February 2026 (planned)}
+  \cventry{Kiel Institute for the World Economy (IfW), Germany, May 2015 and November--December 2016}
+  \cventry{Nottingham Centre for Research on Globalisation and Economic Policy (GEP), University of Nottingham, UK, June--July 2012\\
+  \textit{Visiting PhD student, Supervisor: Prof. Richard Kneller}}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{Honors, Awards and Grants}
+%-------------------------------------------------------------------------
+
+\begin{itemize}
+  \cventry{\textbf{Jan Wallander \& Tom Hedelius Foundation}, research grant (1,000,000 SEK), April 2026}
+
+  \cventry{\textbf{Hamrin Foundation and Örebro University}, Outstanding Research Communication Award (5,400 USD), January 2026}
+
+  \cventry{\textbf{WASP-HS}, 5-year grant for establishing Swedish research cluster ``AI, Structural Change, and the Future of Work'' (\$3,130,000), April 2025\\
+  (PI, together with Nordström Skans (main applicant), and Bursell)}
+
+  \cventry{\textbf{County of Örebro Ambassador}, 2025}
+
+  \cventry{\textbf{Jan Wallander \& Tom Hedelius Foundation}, grant for research exchange and dissemination (20k USD), December 2023}
+
+  \cventry{\textbf{Torsten Söderberg Foundation}, research grant (77,477 USD), November 2023}
+
+  \cventry{\textbf{Expertgruppen för Studier i Offentlig ekonomi (ESO)}, 5 months funding, June 2023}
+
+  \cventry{\textbf{Nyckelfonden}, three-year research grant (\$54,183), March 2023 (co-investigator)}
+
+  \cventry{\textbf{Forskningskommittén, Region Örebro Län}, two-year research grant (\$9,851), June 2022 (co-investigator)}
+
+  \cventry{\textbf{Nyckelfonden}, three-year research grant (\$30,295), April 2022 (co-investigator)}
+
+  \cventry{\textbf{Torsten Söderberg Foundation}, two-year research grant (155k USD), December 2021}
+
+  \cventry{\textbf{Jan Wallander \& Tom Hedelius Foundation}, grant for research exchange and dissemination (26k USD), May 2020}
+
+  \cventry{\textbf{Jan Wallander \& Tom Hedelius Foundation}, 3-year research grant (156k USD), May 2019}
+
+  \cventry{\textbf{Erasmus+}, three-year education and research grant (€300\,000), July 2018 (co-investigator)}
+
+  \cventry{\textbf{Torsten Söderberg Foundation}, two-year research grant (147k USD), December 2016}
+
+  \cventry{\textbf{Wallander Post-doctoral Research Grant} (3 years), Jan Wallander and Tom Hedelius Foundation (\$207,000), December 2013}
+
+  \cventry{\textbf{Sven and Dagmar Saléns Stiftelse}, visiting PhD student position at Leverhulme Centre for Research on Globalisation and Economic Policy, University of Nottingham, UK, June--July 2012}, Supervisor Prof Richard Kneller.
+
+  \cventry{\textbf{Örebro Enskilda Handelsförenings Stiftelse}, award for scientific paper, June 2012}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{Professional Service}
+%-------------------------------------------------------------------------
+
+\subsection{Board Memberships and Advisory Roles}
+
+\begin{itemize}
+  \cventry{Reference group member, Growth Analysis (Tillväxtanalys) initiative on AI and the labour market (with Uppsala University), 2026--present}
+  \cventry{Scientific board member, Swedish Public Employment Service (Arbetsförmedlingen), 2025--present}
+  \cventry{Advisory board member (government appointment), Swedish National Agency for Higher Vocational Education (Myndigheten för yrkeshögskolan), 2023--present}
+  \cventry{Board member, Academy for Leadership and Theology, 2020--2024}
+  \cventry{Editorial board member, \textit{Ekonomisk Debatt} (Journal of the Swedish Economic Association), 2017--2021}
+  \cventry{Reference group member, MONA (Microdata Online Access), Statistics Sweden, March 2012--November 2017}
+  \cventry{Board member, Jusek (trade union for economists et al.), National Board of Trade chapter, 2003--2005}
+  \cventry{Contact person, Saco (trade union), Social Security Administration, Gotland, 2002--2003}
+  \cventry{Volunteer, Student Resource Center, University of Western Ontario, Canada, 1999--2000}
+\end{itemize}
+
+\subsection{Project Leadership}
+
+\begin{itemize}
+  \cventry{WASP-HS multi-institutional and interdisciplinary research cluster ``AI, Structural Change, and the Future of Work,'' Co-leader in leadership team of three, 2025--2030}
+  \cventry{ESO project on AI in the public sector, 2023--2025}
+  \cventry{Research projects on Labour market effects of AI, 2020--present}
+  \cventry{Research project on Export Credit Guarantees, 2017--2021}
+  \cventry{Sino-Swedish Capacity Building on Trade and Environment (Sida-funded), 2005--2006\\
+  \textit{Responsible for substantial part of development and implementation (budget approx. 1 million SEK)}}
+  \cventry{Project on the relation between services and industrial sectors in Sweden, incl. database from Statistics Sweden, 2007--2010}
+  \cventry{1-week course on international trade, Estonian School of Diplomacy, Estonia, 2005}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{PhD Supervision}
+%-------------------------------------------------------------------------
+
+\begin{itemize}
+  \cventry{Lydia Löthman, Örebro University (started September 8, 2025)}
+  \cventry{Mark Hellsten, Aarhus University, Denmark (started Feb. 2022, \textbf{completed 30 April 2025})}
+  \cventry{Erik Engberg, Örebro University (started August 17, 2020)}
+  \cventry{Johan Karlsson, Örebro University (started January 2016, \textbf{completed 3 April 2020})}
+  \cventry{Aili Tang, Örebro University (from January 2017, \textbf{completed 25 May 2018})}
+  \cventry{Louise Johannesson, Örebro University (from April 2016, \textbf{completed 23 March 2018})}
+  \cventry{Anton Gidehag, Örebro University (January 2015--November 2016)}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{Referee Service}
+%-------------------------------------------------------------------------
+
+\textit{Journal of World Trade} (1), \textit{The World Economy} (6), OECD (2), \textit{Review of World Economics/Weltwirtschaftliches Archiv} (5), \textit{Journal of Economics and Statistics/Jahrbücher für Nationalökonomie und Statistik} (1), \textit{Journal of Regional Science} (1), \textit{Annals of Regional Science} (1), \textit{Manchester School} (1), Swedish National Board of Trade (1), \textit{Journal of International Trade and Economic Development} (3), \textit{Journal of Population Economics} (1), \textit{Journal of Business Venturing} (1), \textit{International Trade Journal} (1), \textit{International Review of Economics} (1), \textit{Applied Economics Letters} (4), \textit{Southern Economic Journal} (1), \textit{Industry and Innovation} (1), \textit{ILR Review} (1)
+
+%-------------------------------------------------------------------------
+\section{PhD Examination and Expert Review}
+%-------------------------------------------------------------------------
+
+\begin{itemize}
+  \cventry{Expert reviewer, \textit{Review of World Economics} Prize, September 2025}
+  \cventry{PhD Opponent, Qingyan Peng, October 2024}
+  \cventry{PhD Examiner, Josefin Videnord, Uppsala University, September 2023}
+  \cventry{Expert reviewer, Research Council, KU Leuven, April 2023}
+  \cventry{Expert reviewer, \textit{Review of World Economics} Prize, September 2021}
+  \cventry{Final reviewer, pre-Viva PhD Thesis paper, Polina Knutsson, Lund University, June 2019}
+  \cventry{Final discussant, pre-Viva PhD Thesis seminar, Irina Andone, Uppsala University, January 2018}
+  \cventry{Evaluator, rapporteur and panellist, Horizon 2020, European Commission, 2017}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+  
+%-------------------------------------------------------------------------
+  
+%-------------------------------------------------------------------------
+\section{Invited Presentations}
+%-------------------------------------------------------------------------
+\subsection{Selected}
+\begin{itemize}
+
+  \cventry{University of St. Gallen, Switzerland, November 2026 (planned)}
+  \cventry{University of Tübingen, Germany, November 2026 (planned)}
+  \cventry{MYH multi-agency steering group (9 government agencies), invited expert, May 2026}
+  \cventry{TechSverige/Akavia roundtable with State Secretary, Ministry of Education, 19 May 2026}
+  \cventry{Northeastern University, Boston, USA, January 2026}
+  \cventry{NEXUS AI Workshop, Lund University, \textbf{keynote speaker}, December 2025}
+  \cventry{The National Institute of Economic Research, September 2025}
+  \cventry{Platform for Inequality Research Conference, Aarhus University, \textbf{keynote speaker}, May 2025}
+  \cventry{ETLA Helsinki, ``Charting the Change: Innovations, Well-being, and Economic Transformations'' Conference, \textbf{keynote speaker}, May 2025}
+  \cventry{ESO (Expert Group for Studies in Public Economics) report launch seminar, Stockholm, April 2025}
+  \cventry{Statistics Sweden, February 2025}
+  \cventry{DIGG (government agency), September 2024}
+  \cventry{National Board of Trade, Sweden, seminar, 21 March 2019}
+  \cventry{OECD Conference of the Global Forum on Productivity, Hungary, 26 June 2017}
+  \cventry{OECD Trade Committee, breakfast seminar (National Board of Trade and Swedish Delegation), Paris, 5 November 2014}
+
+\end{itemize}
+
+\subsection{Complete List}
+\subsection{2026}
+\begin{itemize}
+  \cventry{University of St. Gallen, Switzerland, November 2026 (planned)}
+  \cventry{University of Tübingen, Germany, November 2026 (planned)}
+  \cventry{MYH Myndighetssamverkan, multi-agency steering group (9 agencies), invited expert, 21 May 2026}
+  \cventry{Kommuninvest, lecture, 21 May 2026}
+  \cventry{TechSverige/Akavia roundtable with State Secretary, Ministry of Education, 19 May 2026}
+  \cventry{Kompetensdag Tech, 24 April 2026}
+  \cventry{CEFAU/FIND Seminar, Aarhus University, Denmark, 16 April 2026}
+  \cventry{Futurion Seminar, Stockholm, 14 April 2026}
+  \cventry{KEF Krets 6, educational conference, 18 March 2026}
+  \cventry{NTI Gymnasiet, 9 March 2026}
+  \cventry{The Research Centre for Firms and Industry Dynamics (FIND), Aarhus University, Denmark, February 2026}
+  \cventry{Region Örebro Competence Forum, lecture, February 2026}
+  \cventry{Smartare Kommun, course for municipal leaders, 24 February 2026}
+  \cventry{Northeastern University, Boston, USA, January 2026}
+\end{itemize}
+
+\subsection{2025}
+\begin{itemize}
+  \cventry{Kommuninvest, lecture, December 2025}
+  \cventry{The Economy Museum, Stockholm, Sweden, lecture, December 2025}
+  \cventry{NEXUS AI Workshop, Lund University, \textbf{keynote speaker}, December 2025}
+  \cventry{The Swedish Labour Market Council, AI Sweden, November 2025}
+  \cventry{Swedish National Agency for Education, Focus Vocational Education Conference, October 2025}
+  \cventry{The National Institute of Economic Research, September 2025}
+  \cventry{Swedish Insighters, September 2025}
+  \cventry{Swedish National Agency for Higher Vocational Education, August 2025}
+  \cventry{ETLA Helsinki, ``Charting the Change: Innovations, Well-being, and Economic Transformations'' Conference, \textbf{keynote speaker}, May 2025}
+  \cventry{Platform for Inequality Research Conference, Aarhus University, \textbf{keynote speaker}, May 2025}
+  \cventry{Frans Schartau Business Institute, breakfast seminar, Stockholm, May 2025}
+  \cventry{Swedish National Agency for Higher Vocational Education, April 2025}
+  \cventry{ESO (Expert Group for Studies in Public Economics) report launch seminar, ``Kan AI lösa kompetenskrisen i framtidens förvaltning?,'' Stockholm, April 2025}
+  \cventry{Magnet Summit, March 2025}
+  \cventry{Swedish Association of Graduate Engineers (Sveriges Ingenjörer), Örebro District, annual meeting seminar, March 2025}
+  \cventry{Statistics Sweden, February 2025}
+  \cventry{Region Örebro, January 2025}
+\end{itemize}
+
+\subsection{2024}
+\begin{itemize}
+  \cventry{CIKO, Stockholm, December 2024}
+  \cventry{Örebro Senior University (Senioruniversitetet), lecture, December 2024}
+  \cventry{Altinget, Labour market policy network, November 2024}
+  \cventry{WASP-ED seminar (digital), November 2024}
+  \cventry{HR Tech Insights, September 2024}
+  \cventry{SKR Employer Forum, September 2024}
+  \cventry{DIGG (government agency), September 2024}
+  \cventry{Region Örebro, lecture, August 2024}
+  \cventry{Swedish Orthopaedic Association Conference, speaker, August 2024}
+  \cventry{Swedish Insurance in Cooperation, lecture, May 2024}
+  \cventry{Trygghetsfonden TSL, lecturer, May 2024}
+  \cventry{Transport Companies employer organization, lecturer, May 2024}
+  \cventry{Swedish Insurance Cooperation, speaker, May 2024}
+  \cventry{Rud Pedersen Public Affairs seminar, speaker, May 2024}
+  \cventry{AI Impact Lab, Örebro University, speaker, April 2024}
+  \cventry{Student Counselor Conference, speaker, March 2024}
+  \cventry{Statistics Sweden, seminar, January 2024}
+\end{itemize}
+
+\subsection{2023}
+\begin{itemize}
+  \cventry{Public Employment Agency, seminar, November 2023}
+  \cventry{Association of Swedish Higher Education Institutions, presentation, November 2023}
+  \cventry{Swedish Medical Association, Örebro, presentation, November 2023}
+  \cventry{Digitalidag, Örebro, October 2023}
+  \cventry{Competence Agencies of Sweden, October 2023 (panelist)}
+  \cventry{Engineers of Sweden, presentation, October 2023}
+  \cventry{Almedalen, two seminars, June 2023}
+  \cventry{Swedish Media Association, annual conference, May 2023}
+  \cventry{Ratio Institute, seminar, May 2023}
+  \cventry{Ratio Institute, annual open conference, April 2023}
+\end{itemize}
+
+\subsection{2022}
+\begin{itemize}
+  \cventry{The Research Centre for Firms and Industry Dynamics (FIND), Aarhus University, Denmark, October 2022}
+  \cventry{The Research Centre for Firms and Industry Dynamics (FIND), Aarhus University, Denmark, April 2022}
+\end{itemize}
+
+\subsection{2021}
+\begin{itemize}
+  \cventry{Nordic Initiative for Corporate Economics (NICE), Denmark, conference, September 2021}
+  \cventry{Global Labor Organization Virtual Seminar Series, 2 September 2021}
+\end{itemize}
+
+\subsection{2019}
+\begin{itemize}
+  \cventry{Export Credit Agency (EKN), Sweden, presentations, 18 September 2019}
+  \cventry{National Board of Trade, Sweden, seminar, 21 March 2019}
+\end{itemize}
+
+\subsection{2018}
+\begin{itemize}
+  \cventry{University of Minho, Portugal, seminar, 18 April 2018}
+  \cventry{Research Institute of Industrial Economics (IFN), seminar, 14 February 2018}
+  \cventry{OECD expert meeting on services trade policy, structural transformation and labour market adjustments, Paris, 29 January 2018}
+\end{itemize}
+
+\subsection{2017}
+\begin{itemize}
+  \cventry{OECD Conference of the Global Forum on Productivity, Hungary, 26 June 2017}
+  \cventry{Kommuninvest of Sweden, annual meeting of members, panellist, 20 April 2017}
+\end{itemize}
+
+\subsection{2016}
+\begin{itemize}
+  \cventry{Kiel Institute for the World Economy, Germany, seminar, 2 December 2016}
+  \cventry{Ministry of Enterprise and Innovation, Sweden, presentation, 25 November 2016}
+  \cventry{Enterprise Research Centre, Birmingham, UK, Seminar on Institutions and High Growth Entrepreneurship, 20 September 2016}
+  \cventry{Ästa Forum, conference (Region Halland, Swedish Confederation of Industry, Business Halland), 4 February 2016}
+\end{itemize}
+
+\subsection{2015}
+\begin{itemize}
+  \cventry{National Institute of Economic Research, Sweden, 3 November 2015}
+  \cventry{Ministry of Finance, Sweden, seminar, 3 November 2015}
+  \cventry{Kiel Institute for the World Economy, Germany, seminar, 21 May 2015}
+  \cventry{Herbert Felix Institute, Eslöv, Sweden, 28 April 2015}
+\end{itemize}
+
+\subsection{2014}
+\begin{itemize}
+  \cventry{OECD Trade Committee, breakfast seminar (National Board of Trade and Swedish Delegation), Paris, 5 November 2014}
+  \cventry{County Administrative Board, Stockholm, Sweden, 5 December 2014}
+  \cventry{County Administrative Board, Örebro, Sweden, 26 September 2014}
+  \cventry{Entrepreneurship and Small Business Research Institute, Stockholm, Sweden, 14 May 2014}
+  \cventry{County Administrative Board, Stockholm, Sweden, 9 April 2014}
+  \cventry{Regional Development Council, Örebro, Sweden, 28 March 2014}
+\end{itemize}
+
+\subsection{2013}
+\begin{itemize}
+  \cventry{Municipality of Sundsvall, Sweden, 31 October 2013}
+  \cventry{Ministry for Foreign Affairs, Sweden, 11 September 2013}
+\end{itemize}
+
+\subsection{2012 and Earlier}
+\begin{itemize}
+  \cventry{Lund University, Department of Economics, seminar, 16 January 2012}
+  \cventry{Lund University, Department of Economics, seminar, 18 October 2011}
+  \cventry{EU Commission, Brussels, Belgium, 19 March 2010}
+  \cventry{EU Trade Economist Network, The Hague, Netherlands, 9 October 2009}
+  \cventry{EU Trade Economist Network, Barcelona, Spain, September 2006}
+  \cventry{Royal Institute for International Affairs workshop on trade and climate relationship, London, 2005}
+  \cventry{UNFCCC COP10, side-event (UNCTAD and ICTSD), Buenos Aires, 2004}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+
+
+\section{Conference Presentations (Complete List)}
+%-------------------------------------------------------------------------
+
+\begin{itemize}
+  \cventry{American Economic Association Annual Meeting, Philadelphia, USA, January 2026}
+  \cventry{Aarhus Workshop on the Impact of Automation, Denmark, August 2025}
+  \cventry{European Economic Association Annual Conference, Rotterdam, Netherlands, August 2024 (presented by Engberg)}
+  \cventry{Technology, Innovation and Growth Conference, Poland, May 2024}
+  \cventry{Zurich Workshop in AI and Economics, Switzerland, September 2023 (presented by Engberg)}
+  \cventry{SNEE Annual Conference, Lund, Sweden, November 2022 (presented by Tang)}
+  \cventry{AIEL Bi-Annual Conference, Örebro, Sweden, June 2022 (presented by Engberg)}
+  \cventry{PILLARS education, skills and worker retraining conference (virtual), Germany, February 2022}
+  \cventry{SNEE Annual Conference, Lund, Sweden, November 2021 (presented by Tang)}
+  \cventry{19th ILERA World Congress, Lund, Sweden, June 2021}
+  \cventry{TIISA Annual Conference, China/Zoom, November 2020 (presented by Sabolova)}
+  \cventry{TIISA Annual Conference, Switzerland, September 2019}
+  \cventry{FREIT: LETC Conference, Izola, Slovenia, June 2019}
+  \cventry{94th Western Economic Association International Conference, San Francisco, USA, June 2019}
+  \cventry{SNEE Annual Conference, Lund, Sweden, November 2018 (presented by Tang)}
+  \cventry{SNEE Annual Conference, Malmö, Sweden, October 2017}
+  \cventry{ETSG Annual Conference, Florence, Italy, September 2017}
+  \cventry{American Economic Association Annual Meeting, San Francisco, USA, January 2016}
+  \cventry{6th International Conference on ``Economics of Global Interactions,'' Bari, Italy, September 2015}
+  \cventry{ETSG Annual Conference, Munich, Germany, September 2014}
+  \cventry{International Study Group on Exports and Productivity (ISGEP) Conference, Stockholm, Sweden, September 2012}
+  \cventry{National Conference in Economics, Stockholm, Sweden, September 2012 (poster)}
+  \cventry{National Conference in Economics, Uppsala, Sweden, September 2011 (poster)}
+  \cventry{European Trade Study Group Annual Conference (ETSG), Denmark, September 2011}
+  \cventry{12th Annual SNEE European Integration Conference, Mölle, Sweden, 2010}
+  \cventry{12th Annual Conference for Global Economic Analysis, Helsinki, Finland, 2008}
+  \cventry{Conference on ``The Baltic Sea Region's Integration in the Global Economy,'' SITE, Stockholm School of Economics, 2007}
+  \cventry{ETSG Annual Conference, Vienna, Austria, September 2006}
+  \cventry{10th Annual Conference for Global Economic Analysis, Addis Abeba, Ethiopia, 2006}
+  \cventry{Agri- and Trade Workshop, SLU, 2006}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{Conference and Workshop Organization}
+%-------------------------------------------------------------------------
+
+\begin{itemize}
+  \cventry{Initiator and main organizer, international and multidisciplinary conference on \textbf{The Impact of AI on White Collar Work}, June 2022, 2024, and 2026}
+  \cventry{Initiator and main organizer, \textbf{Causal Machine Learning Workshop} with Prof. Lechner, jointly with WASP-HS, Ratio and Örebro University, September 2025}
+  \cventry{Organizer, \textbf{TIISA Annual Conference 2021} on ``Trade and the Digital Transformation of Services,'' Örebro University, Sweden, November 2021}
+  \cventry{Initiator and main organizer, international and multidisciplinary digital conference on The Impact of AI on White Collar Work, November 2020}
+  \cventry{Co-initiator and co-organizer, workshop on publishing in higher-ranked journals, Örebro University, 2018}
+  \cventry{Organiser, seminar series in economics, Örebro University, 2016--present}
+  \cventry{Brown-bag seminar series initiator and coordinator, Örebro University, 2016--2020}
+  \cventry{Co-organised research meetings in economics, Örebro University, 2011--2012}
+  \cventry{Arranged workshop on micro-level analysis of globalisation, National Board of Trade, May 2010}
+  \cventry{Coordinator and Chair, session on global environmental governance, Sino-Swedish Senior Seminar on Trade and Environment, Saltsjöbaden, 2006}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{Teaching}
+%-------------------------------------------------------------------------
+
+\begin{itemize}
+\cventry{\textbf{Instructor (advanced level)}, Programming and Data Management, Örebro University, Fall 2025--present \textit{(teaching; not course responsible)}}
+  \cventry{Main lecturer, \textbf{Globalisation}, Örebro University, Spring 2025--present}
+  \cventry{Graduate course in \textbf{Corporate Finance}, Örebro University, 2018--present}
+  \cventry{BSc and MSc thesis advisor, Örebro University, 2019--present}
+  \cventry{Parts of \textbf{Applied Econometrics} course, Örebro University (current)}
+  \cventry{Initiator, main lecturer and course manager, entry level life-long learning course on \textbf{``Artificial Intelligence and the (R)evolution of Working Life,''} Örebro University, 2024--present}
+  \cventry{Guest lecturer on ``AI as a GPT and implications for economic growth,'' advanced level course on Economics of Innovation, Lund University, September 2024}
+  \cventry{Lecturer and coordinator, Economic analysis, Economics 101, Örebro University, Fall 2016}
+  \cventry{Main lecturer and course manager, advanced course on \textbf{The International Trading System}, Örebro University, 2011--2014}
+  \cventry{Guest lecturing on policy responses to globalisation in the trade and environment field, MA-course, Uppsala University, 2006}
+  \cventry{Taught on international trade -- various courses for Chinese, Eastern European and Swedish government officials, academics and students; Stockholm, Lund, Örebro and Tallinn; 2005--2010}
+  \cventry{Taught on trade and environment in the WTO -- courses for Chinese officials and academics; Stockholm and Lund; 2005}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{Other Academic Activities}
+%-------------------------------------------------------------------------
+
+\begin{itemize}
+  \cventry{Initiator and co-leader of an international and multidisciplinary research lab (\textbf{AI-Econ Lab}), 2019--present}
+  \cventry{Co-initiator of the Örebro University Junior Faculty organisation, 2017}
+  \cventry{Member of the reference group for a major research call (Trade \& Environment, 30 mn SEK), MISTRA research foundation}
+  \cventry{Presented at seminar on development of services and their importance for success, National Board of Trade and Almega, Sweden, 20 April 2010}
+  \cventry{Started up, managed and spread knowledge about micro-level database at the National Board of Trade, 2007--2010}
+  \cventry{Held an introduction to GTAP and other GE models -- workshop, National Board of Trade, 2008}
+  \cventry{Started up GTAP-work at the National Board of Trade in 2005}
+  \cventry{Presented climate and trade rules, ICTSD workshop on trade and climate relationship, Geneva, 2004}
+  \cventry{Presented climate and trade rules, Wilton Park conference on climate change, England, 2003}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{Professional Affiliations}
+%-------------------------------------------------------------------------
+
+\begin{itemize}
+  \cventry{Trade in Services and Investment Associates (TIISA) Network}
+  \cventry{The Global Labor Organization (GLO)}
+  \cventry{Centre for Economic Policy Research (CEPR)}
+  \cventry{The Global Trade Analysis Project (GTAP) Network}
+  \cventry{Online Users of The Swedish Employer Employee Data (OUTSEED)}
+  \cventry{The Swedish Economic Association (Nationalekonomiska Föreningen)}
+  \cventry{The European Economic Association}
+  \cventry{The American Economic Association}
+  \cventry{Network of European Trade Economists (TEN), EC-Commission and Member States' Administrations (previous, 2005--2013)}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{Technical Skills}
+%-------------------------------------------------------------------------
+
+Stata, Python, \LaTeX, SQL, GEMPACK/GTAP
+
+%-------------------------------------------------------------------------
+\section{Media Coverage (Complete List)}
+%-------------------------------------------------------------------------
+
+\subsection{2026}
+\begin{itemize}
+  \cventry{Tidningen Näringslivet, 26 March (Interviewed)}
+  \cventry{Arbetsvärlden, 17 March (Interviewed)}
+  \cventry{Dagens Nyheter, 15 March (Op-ed)}
+  \cventry{Svenska Dagbladet, 7 March (Interviewed)}
+  \cventry{Aftonbladet, 2 March (Interviewed)}
+  \cventry{SR P4 Örebro, 26 January (Interviewed, Morgon i P4)}
+  \cventry{SVT Nyheter Jämtland, 7 January (Interviewed)}
+  \cventry{Nya Lidköpings Tidning, 2 January}
+\end{itemize}
+
+\subsection{2025}
+\begin{itemize}
+  \cventry{Sveriges Radio, 15 November (Interviewed, ``Ekonomiekot Extra'')}
+  \cventry{SVT documentary series ``Folkets AI,'' 5 November (Interviewed)}
+  \cventry{Sveriges Radio, 15 April (Interviewed)}
+  \cventry{Realtid, 15 April (Interviewed)}
+  \cventry{Göteborgs-Posten, 14 April (Interviewed)}
+  \cventry{Dagens Samhälle, 7 April (Interviewed)}
+  \cventry{Dagens Industri, 3 April (Op-ed)}
+  \cventry{Akavia Aspekt, February (Interviewed)}
+\end{itemize}
+
+\subsection{2024}
+\begin{itemize}
+  \cventry{Sveriges Radio, 9 September (Interviewed, Studio Ett)}
+  \cventry{Sveriges Radio, 9 September (Interviewed, Kulturnyheterna)}
+  \cventry{Robert Edvardsson Podcast, 2 September (Interviewed)}
+  \cventry{Nerikes Allehanda, 13 May (Interviewed)}
+  \cventry{Fråga Forskaren podcast, 26 April}
+  \cventry{Sveriges Radio, 11 April (Interviewed, P4 Jönköping)}
+  \cventry{Dagens Nyheter, 10--11 April (Interviewed)}
+  \cventry{Dagens Industri, 22 March (Op-ed)}
+  \cventry{Tidningen Näringslivet, 10 April}
+  \cventry{Kollega, 21 March}
+  \cventry{Sveriges Radio, 12 March (Interviewed, Studio Ett, P1)}
+  \cventry{TV4, 12 March (Interviewed)}
+  \cventry{Sveriges Radio, 12 March (Interviewed, P3 and P4 Örebro)}
+  \cventry{Studio Akavia Podcast, 20 February (Interviewed)}
+\end{itemize}
+
+\subsection{2023}
+\begin{itemize}
+  \cventry{Kyrkans Akademikerförbund, December, Newsletter (Interviewed)}
+  \cventry{Sveriges Radio, 16 May (Interviewed, P4 Örebro)}
+  \cventry{TV4 Efter fem, 29 March (Interviewed)}
+  \cventry{SVT Nyheter, 11 March}
+  \cventry{SVT Ekonomibyrån, 13 March (Interviewed)}
+  \cventry{ORU Talks Podcast, 7 February (Interviewed)}
+  \cventry{Universeum Branding Geeks Podcast, 25 January (Interviewed)}
+\end{itemize}
+
+\subsection{2021}
+\begin{itemize}
+  \cventry{Tidningen Näringslivet, 2 December}
+  \cventry{IT-Karriär.se, 3 December}
+\end{itemize}
+
+\subsection{2020}
+\begin{itemize}
+  \cventry{Finago, 10 December (Interviewed)}
+  \cventry{Nerikes Allehanda, 1 November (Interviewed)}
+  \cventry{Dagens Industri, 22 April (Op-ed)}
+  \cventry{VD-tidningen, 16 January}
+\end{itemize}
+
+\subsection{2019}
+\begin{itemize}
+  \cventry{VD-tidningen, 5 December}
+  \cventry{Ingenjören, 16 August (Interviewed)}
+  \cventry{Nerikes Allehanda, 24 June (Interviewed)}
+\end{itemize}
+
+\subsection{2018}
+\begin{itemize}
+  \cventry{Sveriges Radio, 19 August (Interviewed, Godmorgon Världen, P1)}
+  \cventry{Sveriges Radio, 9 March (Interviewed, P4 Örebro)}
+\end{itemize}
+
+\subsection{2017}
+\begin{itemize}
+  \cventry{Sveriges Radio, 30 January (Interviewed, Studio Ett)}
+\end{itemize}
+
+\subsection{2016}
+\begin{itemize}
+  \cventry{Dagens Industri, 10 October (Op-ed)}
+  \cventry{Sveriges Radio, 22 September (Interviewed, P4 Örebro)}
+  \cventry{Financial Times, 22 June (Letter)}
+  \cventry{Dagens Industri, 22 June}
+  \cventry{Hallands Nyheter, 4 February}
+  \cventry{Hallandsposten, 6 February}
+\end{itemize}
+
+\subsection{2015}
+\begin{itemize}
+  \cventry{Världshorisont (UN Association of Sweden magazine), No. 4 (Interviewed)}
+  \cventry{Epoch Times, 4 September}
+  \cventry{Dagens Nyheter, 1 September (Op-ed)}
+  \cventry{Aftonbladet, 1 September}
+  \cventry{Scroll.in, 9 June}
+  \cventry{Uppsala Nya Tidning, 4 April (Op-ed)}
+  \cventry{Kristianstadsbladet, 22 October (Interviewed)}
+  \cventry{Wall Street Journal, 10 April (on co-authored study)}
+\end{itemize}
+
+\subsection{2014}
+\begin{itemize}
+  \cventry{Svenska Dagbladet, 24 October (Op-ed)}
+\end{itemize}
+
+\subsection{2013}
+\begin{itemize}
+  \cventry{Sundsvalls Tidning, 2 November (Interviewed)}
+  \cventry{Svenska Dagbladet, 15 June (Interviewed)}
+  \cventry{Dagens Industri, 11 November}
+  \cventry{The Local, 11 November (Interviewed)}
+  \cventry{SVT Nyheter Skåne, 11 November}
+\end{itemize}
+
+\subsection{2012}
+\begin{itemize}
+  \cventry{Fordonskomponenten, No. 4 (Interviewed)}
+\end{itemize}
+
+\subsection{2010}
+\begin{itemize}
+  \cventry{Veckans Affärer, 26 January (Interviewed)}
+\end{itemize}
+
+%-------------------------------------------------------------------------
+
+\end{document}
