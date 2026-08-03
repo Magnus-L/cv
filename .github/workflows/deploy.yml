@@ -18,10 +18,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Install Tectonic (latest release from GitHub)
         run: |
@@ -78,7 +78,9 @@ jobs:
           HTML
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        # v4 stopped including dotfiles in the artifact. Harmless here: public/ is
+        # built from scratch above and holds three PDFs and a generated index.html.
+        uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
@@ -91,4 +93,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
