@@ -1,0 +1,71 @@
+# Open an issue when a published DOI under Magnus's ORCID is not on the CV.
+#
+# The CV's content is maintained by hand; only compiling and publishing is automated. The
+# change that most often goes unrecorded is a working paper becoming a journal article, because
+# that happens on the journal's schedule rather than his. A monthly LLM routine audits the CV
+# more broadly, but it runs on a bridge environment that has silently died before and needs his
+# Mac awake at the time. This job is the floor beneath it: no model, no bridge, no laptop, and
+# when it breaks it goes red and emails him, which is how the lab site's silent build failure
+# was eventually caught in August 2026.
+#
+# DAILY, NOT MONTHLY, and deliberately. GitHub drops rare cron schedules under load: the lab
+# site's `0 7 28 * *` monthly job silently failed to fire on 28 Jul 2026, and a whole day of
+# scheduled runs was dropped across two repositories on 27 Aug. A monthly slot missed is a
+# month lost. Daily costs about twenty seconds and one API call, and the issue-dedup step below
+# is what stops that becoming daily noise.
+name: DOI check
+
+on:
+  schedule:
+    - cron: "40 6 * * *"     # 08:40 Europe/Stockholm in summer, 07:40 in winter. The drift is fine.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Exit 0 = nothing new. Exit 1 = candidates found, which is a finding and not a failure,
+      # so it must not fail the step. Exit 2 = OpenAlex unreachable, which IS a failure and
+      # should go red: a detector that cannot reach its source must not look like a clean run.
+      - name: Look for published DOIs missing from the CV
+        id: check
+        run: |
+          set +e
+          python3 scripts/check_new_dois.py > report.txt 2> err.txt
+          code=$?
+          cat report.txt
+          cat err.txt >&2
+          if [ "$code" -eq 2 ]; then
+            echo "::error::OpenAlex could not be reached; the check did not run"
+            exit 1
+          fi
+          echo "found=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      # One open issue at a time. Without this the job would file the same candidates every
+      # morning until Magnus acted, which is the fastest way to teach him to ignore it.
+      - name: File an issue, unless one is already open
+        if: steps.check.outputs.found == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          existing=$(gh issue list --state open --label doi-check --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then
+            echo "Issue #$existing is already open; not filing another."
+            exit 0
+          fi
+          gh label create doi-check --description "Automated CV DOI check" --color ededed 2>/dev/null || true
+          gh issue create \
+            --title "Published work not on the CV" \
+            --label doi-check \
+            --body-file report.txt
