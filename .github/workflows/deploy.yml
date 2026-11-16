@@ -24,8 +24,12 @@ jobs:
         uses: actions/configure-pages@v6
 
       - name: Install Tectonic (latest release from GitHub)
+        # Authenticated API call: anonymous calls from shared runners hit GitHub's
+        # rate limit and return 403 (failed deploy 16 Nov 2026).
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          URL=$(curl -fsSL https://api.github.com/repos/tectonic-typesetting/tectonic/releases/latest \
+          URL=$(curl -fsSL -H "Authorization: Bearer $GH_TOKEN" https://api.github.com/repos/tectonic-typesetting/tectonic/releases/latest \
             | grep browser_download_url \
             | grep 'x86_64-unknown-linux-gnu.tar.gz' \
             | cut -d '"' -f 4 | head -1)
